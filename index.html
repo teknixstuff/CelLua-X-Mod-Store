@@ -23,17 +23,33 @@ h1,h2,h3,h4,h5,h6 {
   display: table;
 }
 .dlbtn {
-  background-color: #FF32E0;
+  background-color: #CC0099;
   border-radius: 5px;
   font-size: 1em;
   padding: 0.5em;
   color: white;
   text-decoration: none;
+  transition: background-color 0.5s
+}
+.dlbtn:hover {
+  background-color: #FF32E0;
+}
+#AndroidDL {
+  background-color: #3EDC85;
+}
+#AndroidDL:hover {
+  background-color: #5EFCA5;
+}
+#Win64DL {
+  background-color: #0078D7;
+}
+#Win64DL:hover {
+  background-color: #00adef;
 }
 </style>
 <div class="clearfix about" style="border: 1px solid grey; border-radius: 5px;">
 	<img style="float: left; margin-right: 1em;" src="https://img.itch.zone/aW1hZ2UvMTYzNjk1Ny85NjM1NzM3LnBuZw==/original/58n%2BwT.png" height="256"></img></td>
-	<div style="margin-left: 1em;"><h1>CelLua X</h1><div>By <b>Tech Stuff</b></div><p>CelLua X is a mod of CelLua, with a mod loader, an android port, and a few qol tweeks.</p><div>Downloads: <a style="background-color: #0078D7; border-radius: 5px; font-size: 1em; padding: 0.5em; color: white; text-decoration: none;" href="https://github.com/teknixstuff/CelLua-X/releases/download/0.0.1/CelLua.X.Win64.zip">Windows 64-bit</a> <a style="background-color: #3EDC85; border-radius: 5px; font-size: 1em; padding: 0.5em; color: white; text-decoration: none;" href="https://github.com/teknixstuff/CelLua-X/releases/download/0.0.1/CelLua.X.with.modloader.apk">Android</a></div></div>
+	<div style="margin-left: 1em;"><h1>CelLua X</h1><div>By <b>Tech Stuff</b></div><p>CelLua X is a mod of CelLua, with a mod loader, an android port, and a few qol tweeks.</p><div>Downloads: <a class="dlbtn" id="Win64DL" href="https://github.com/teknixstuff/CelLua-X/releases/download/0.0.1/CelLua.X.Win64.zip">Windows 64-bit</a> <a class="dlbtn" id="AndroidDL" href="https://github.com/teknixstuff/CelLua-X/releases/download/0.0.1/CelLua.X.with.modloader.apk">Android</a></div></div>
 </div>
 <br>
 <h1 style="text-align: center;">Mod Store</h1>
