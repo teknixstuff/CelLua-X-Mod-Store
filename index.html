@@ -7,6 +7,11 @@ body {
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
+
+a {
+  color: 
+}
+
 .grid {
   display: grid;
   grid-column-gap: 15px;
@@ -46,14 +51,56 @@ h1,h2,h3,h4,h5,h6 {
 #Win64DL:hover {
   background-color: #00adef;
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 </style>
 <div class="clearfix about" style="border: 1px solid grey; border-radius: 5px;">
 	<img style="float: left; margin-right: 1em;" src="https://img.itch.zone/aW1hZ2UvMTYzNjk1Ny85NjM1NzM3LnBuZw==/original/58n%2BwT.png" height="256"></img></td>
-	<div style="margin-left: 1em;"><h1>CelLua X</h1><div>By <b>Tech Stuff</b></div><p>CelLua X is a mod of CelLua, with a mod loader, an android port, and a few qol tweeks.</p><div>Downloads: <a class="dlbtn" id="Win64DL" href="https://github.com/teknixstuff/CelLua-X/releases/latest/download/CelLua.X.Win64.zip">Windows 64-bit</a> <a class="dlbtn" id="AndroidDL" href="https://github.com/teknixstuff/CelLua-X/releases/latest/download/CelLua.X.with.modloader.apk">Android</a></div></div>
+	<div style="margin-left: 1em;">
+    <h1>CelLua X</h1>
+    <div>By <b>Tech Stuff</b></div>
+    <p>CelLua X is a mod of CelLua, with a mod loader, an android port, and a few qol tweeks.</p>
+    <p>Lead Dev: <span class="tooltip">Tech Stuff<span class="tooltiptext">Discord: Tech Stuff#2849<br><a href="https://discord.gg/e5U6wQfSn6">Discord Server</a><br><a href="https://www.youtube.com/channel/UCdbjUe7fU7PGp1HOwqZ6EZQ">Youtube Channel</a></span></span></p>
+    <p>Testers: <span class="tooltip">Nolan0027<span class="tooltiptext">Discord: Nolan0027#5567</span></span></p>
+    <div>Downloads:
+      <a class="dlbtn" id="Win64DL" href="https://github.com/teknixstuff/CelLua-X/releases/latest/download/CelLua.X.Win64.zip">Windows 64-bit</a>
+      <a class="dlbtn" id="AndroidDL" href="https://github.com/teknixstuff/CelLua-X/releases/latest/download/CelLua.X.with.modloader.apk">Android</a>
+    </div>
+  </div>
 </div>
 <br>
 <h1 style="text-align: center;">Mod Store</h1>
 <br>
 <div class="grid">
-  <div class="item"><h3>Diamond Coin</h3><p>Adds a diamond coin which counts as 5 coins.</p><a class="dlbtn" href="https://github.com/teknixstuff/CelLua-X-Mod-Store/releases/download/diamondcoin/diamond.coin.zip">Download</a></div>
+  <div class="item">
+    <h3>Diamond Coin</h3>
+    <p>Adds a diamond coin which counts as 5 coins.</p>
+    <p>Thanks to <span class="tooltip">Nolan0027<span class="tooltiptext">Discord: Nolan0027#5567</span></span> for coming up with the idea!</p>
+    <a class="dlbtn" href="https://github.com/teknixstuff/CelLua-X-Mod-Store/releases/download/diamondcoin/diamond.coin.zip">Download</a>
+  </div>
 </div>
